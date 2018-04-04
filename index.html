@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Movies</title>
+	
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel= "stylesheet" type= "text/css" href= "styles.css">
+
+</head>
+<body>
+
+
+	
+	<div class='container'>
+		<div class='jumbotron'>
+			<div class='container'>
+				<h1 style="color: #00b3b3"> Movies Hangman</h1>
+				<h2 style="color:#3399ff"> Guess the Movie</h2>
+				<small style="color:#1ab2ff"> Click any letter to begin...</small>
+			</div>
+		</div>
+
+
+
+		
+		<div class='panel panel-default'>
+			<div class='panel-heading'>
+				<h3 style="color: #cc99ff" class='panel title'><strong>Word to Guess</strong></h3>
+			</div>
+
+			<div class="panel-body">
+
+				<h3 id="word-blanks">_ _ _ _ _ _ _ _ _ _</h3>
+		
+		</div>
+   </div>
+
+
+
+
+	<div class ="panel panel-default">
+		<div class="panel-body">
+			
+			<strong style="color: #cc99ff"> Wrong Guesses: </strong> <span id ="wrong-guesses">0</span>
+		
+		</div>
+	
+	</div>
+
+
+
+
+
+
+<div class ="panel panel-default">
+		<div class="panel-body">
+			
+			<strong style="color: #cc99ff"> Guesses Left: </strong> <span id ="guesses-left">9</span>
+		
+		</div>
+
+	</div>
+
+
+
+<div class ="panel panel-default">
+		<div class="panel-body">
+			<strong style="color: #cc99ff"> Wins: </strong> <span id ="win-counter">0</span>
+		</div>
+
+	</div>
+
+
+
+	<div class ="panel panel-default">
+		<div class="panel-body">
+			<strong style="color: #cc99ff"> Losses: </strong> <span id ="loss-counter">0</span>
+		</div>
+	</div>
+
+ </div>
+
+
+<script>
+	window.onload = function() {  // reload file every second
+		setInterval(function() { location.reload(); } , 1000);
+	};
+</script>
+
+		<script type="logic.js"></script>
+
+
+
+</body>
+</html>

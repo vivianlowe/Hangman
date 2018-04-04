@@ -1,0 +1,10 @@
+.jumbotron {
+	background-image: url(https://cdn.vectorstock.com/i/1000x1000/98/34/colorful-film-roll-with-reflection-vector-1269834.jpg);
+	width: 1000px;
+	height: 260px;
+}
+
+h1, h2, .jumbotron, small {
+	text-align: center;
+}
+

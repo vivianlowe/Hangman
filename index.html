@@ -4,6 +4,7 @@
 	<title>Movies</title>
 	
 
+<!-- Bootstrap CDN -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <link rel= "stylesheet" type= "text/css" href= "styles.css">
 
@@ -11,8 +12,10 @@
 <body>
 
 
-	
+	<!-- Bootstrap 'container' that will hold everything -->
 	<div class='container'>
+
+		<!-- Jumbotron holds the title section -->
 		<div class='jumbotron'>
 			<div class='container'>
 				<h1 style="color: #00b3b3"> Movies Hangman</h1>
@@ -22,8 +25,12 @@
 		</div>
 
 
+<!-- Game counters held here. Panels are used to hold the sections -->
+<div class='row'>
+	<div class='col-lg-12'>
 
-		
+
+		<!-- First Panel: Holds the Word to Guess (blanks and guessed word). -->
 		<div class='panel panel-default'>
 			<div class='panel-heading'>
 				<h3 style="color: #cc99ff" class='panel title'><strong>Word to Guess</strong></h3>
@@ -31,6 +38,8 @@
 
 			<div class="panel-body">
 
+
+				<!-- This h3 section is what we'll be replacing with latters as the user guesses -->
 				<h3 id="word-blanks">_ _ _ _ _ _ _ _ _ _</h3>
 		
 		</div>
@@ -38,10 +47,11 @@
 
 
 
-
+	<!-- Second Panel: Holds the list of wrong user guesses -->
 	<div class ="panel panel-default">
 		<div class="panel-body">
 			
+			<!-- This span section is where we'll be dumping the wrong guesses -->
 			<strong style="color: #cc99ff"> Wrong Guesses: </strong> <span id ="wrong-guesses">0</span>
 		
 		</div>
@@ -52,10 +62,11 @@
 
 
 
-
+<!-- Third Panel: Holds the numbre of wrong guesses -->
 <div class ="panel panel-default">
 		<div class="panel-body">
 			
+			<!-- This span is where we'll dump the number of guesses left -->
 			<strong style="color: #cc99ff"> Guesses Left: </strong> <span id ="guesses-left">9</span>
 		
 		</div>
@@ -64,8 +75,11 @@
 
 
 
+<!-- Fourth Panel: Holds the Numbr of wins -->
 <div class ="panel panel-default">
 		<div class="panel-body">
+
+			<!-- We'll be dumping the number of wins here -->
 			<strong style="color: #cc99ff"> Wins: </strong> <span id ="win-counter">0</span>
 		</div>
 
@@ -73,21 +87,18 @@
 
 
 
+	<!--Fifth Panel: Holds the number of losses here -->
 	<div class ="panel panel-default">
 		<div class="panel-body">
+
+			<!-- We'll be dumping the number of losses here -->
 			<strong style="color: #cc99ff"> Losses: </strong> <span id ="loss-counter">0</span>
 		</div>
 	</div>
 
  </div>
 
-
-<script>
-	window.onload = function() {  // reload file every second
-		setInterval(function() { location.reload(); } , 1000);
-	};
-</script>
-
+		<!-- Adds a link to the JavaScrpit file. It is loaded at the bottom so that it waits for the html content to display first. If you put this link at the top, it will crash becaus the html IDs won't exist yet. -->
 		<script type="logic.js"></script>
 
 
